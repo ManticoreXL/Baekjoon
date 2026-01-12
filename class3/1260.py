@@ -14,7 +14,7 @@ def get_neighbors(graph, node):
     return neighbors
 
 
-def dfs(graph, node, visited: set):
+def DFS(graph, node, visited: set):
     if node is None:
         return
     if node in visited:
@@ -27,10 +27,10 @@ def dfs(graph, node, visited: set):
     neighbors = get_neighbors(graph, node)
 
     for n in neighbors:
-        dfs(graph, n, visited)
+        DFS(graph, n, visited)
 
 
-def bfs(graph, node): 
+def BFS(graph, node): 
     q = deque()
 
     visited = set()
@@ -64,8 +64,8 @@ if __name__ == '__main__':
         graph[x][y] = 1
         graph[y][x] = 1
 
-    dfs(graph, v, set())
+    DFS(graph, v, set())
     print()
-    bfs(graph, v)
+    BFS(graph, v)
 
 # endif

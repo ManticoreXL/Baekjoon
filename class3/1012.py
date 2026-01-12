@@ -8,7 +8,7 @@ dy = [-1, 1, 0, 0]
 dx = [0, 0, -1, 1]
 
 
-def bfs(y, x, rows, cols, field, visited):
+def BFS(y, x, rows, cols, field, visited):
     q = deque([(y, x)])
     visited[y][x] = True
 
@@ -40,7 +40,7 @@ for _ in range(T):
     for i in range(N):
         for j in range(M):
             if field[i][j] == 1 and visited[i][j] == False:
-                bfs(i, j, N, M, field, visited)
+                BFS(i, j, N, M, field, visited)
                 w += 1
 
     print(w)
