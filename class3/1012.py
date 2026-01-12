@@ -14,7 +14,6 @@ def bfs(y, x, rows, cols, field, visited):
 
     while q:
         curr_y, curr_x = q.popleft()
-        visited[y][x] = True
         
         for i in range(4):
             next_y = curr_y + dy[i]
