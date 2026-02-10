@@ -1,5 +1,5 @@
 # Baekjoon
-BOJ problems what I solved myself.
+Linked with ![BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub)
 
 ### My Profile
 - BOJ: https://www.acmicpc.net/user/zip3366
